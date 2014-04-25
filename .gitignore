@@ -1,0 +1,12 @@
+*.[oa]
+*.ppu
+*.dcu
+*.lps
+*.compiled
+*.bak*
+*.~*
+
+*.res
+*.dof
+*.cfg
+*.ddp
