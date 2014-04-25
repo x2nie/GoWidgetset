@@ -30,8 +30,7 @@ requires
   designide,
   vcl,
   vclactnband,
-  vclx,
-  MyDesigner_d7;
+  vclx;
 
 contains
   GoWidgetset in 'GoWidgetset.pas',

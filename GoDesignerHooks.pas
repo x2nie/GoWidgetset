@@ -40,7 +40,8 @@ type
   
 implementation
 
-uses Unit2, MyWidgetSet;
+uses //Unit2,
+  GoWidgetSet;
 
 { TDesignerHook }
  
@@ -83,7 +84,7 @@ begin
 
   if Result then
   begin
-    form2.Caption := Sender.Name;
+    //form2.Caption := Sender.Name;
   end;
 end;
  
@@ -176,10 +177,10 @@ begin
   begin
     c := self.FRoot.Components[i];
     //if not (c is TControl) then
-    if c is TMyWidget then
+    if c is TGoWidget then
     begin
       form.Canvas.Pen.Color := clRed;
-      with TMyWidget(c) do
+      with TGoWidget(c) do
       form.Canvas.Rectangle(left, top, left+ width, top + height);
     end;
     
